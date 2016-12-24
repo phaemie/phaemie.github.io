@@ -14,11 +14,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: "Phaemie Ng, UX Designer for the Web"
-email: phaemie@gmail.com
+# email: phaemie@gmail.com
 description: The personal site of Phaemie Ng
 baseurl: "" # the subpath of your site, e.g. /blog
+prod_host: phaemie.com
 url: "https://phaemie.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: phaemie
+enforce_ssl: phaemie.com 
+# twitter_username: phaemie
 github_username:  phaemie
 
 # Build settings
@@ -29,3 +31,4 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - .gitignore

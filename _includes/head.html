@@ -2,6 +2,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript">
+    var isProd = location.host.toLowerCase().substring(location.host.length - "{{site.prod_host}}".length) === "{{site.prod_host}}";
+    if (isProd && location.protocol != "https:") location.protocol = "https";
+  </script>
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
