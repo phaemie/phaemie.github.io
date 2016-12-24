@@ -21,7 +21,7 @@ prod_host: phaemie.com
 url: "https://phaemie.com" # the base hostname & protocol for your site, e.g. http://example.com
 enforce_ssl: phaemie.com 
 # twitter_username: phaemie
-github_username:  phaemie
+# github_username:  phaemie
 
 # Build settings
 markdown: kramdown
