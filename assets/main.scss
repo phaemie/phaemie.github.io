@@ -26,7 +26,8 @@ $column-width:     85px;
 
 $on-palm:          545px; // 5 columns + 6 gutters
 $on-laptop:        755px; // 7 columns + 8 gutters
-$on-desktop:       1280px; // 12 columns + 13 gutters
+$on-desktop:       1070px; // 10 columns + 11 gutters
+//$on-desktop:       1280px; // 12 columns + 13 gutters
 
 @mixin media-query($device) {
   @media screen and (min-width: $device) {
@@ -72,11 +73,11 @@ ul {
         max-width: $on-palm;
 
         @include media-query($on-laptop) {
-            max-width: $on-laptop - (2 * ($column-width + $gutter-width));
+            max-width: $on-laptop - ( ($column-width + $gutter-width));
         }
 
         @include media-query($on-desktop) {
-            max-width: $on-desktop - (2 * ($column-width + $gutter-width));
+            max-width: $on-desktop - ( ($column-width + $gutter-width));
         }
     }
 }
