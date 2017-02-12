@@ -1,46 +1,36 @@
 <footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
+  <section class="wrapper">
+    <h1 class="footer-heading">About me</h1>
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-        </ul>
+        <img src="{{ "assets/avatar.png" | relative_url }}" alt="A picture of the author, Phaemie Ng" height="160" width="160" />
       </div>
-
       <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
+        {% for page in site.pages %}
+          {% if page.footer %}
+            {{ page.content }}
           {% endif %}
-
+        {% endfor %}
+        <ul class="contact-list">
+          {% if site.email %}
+            {% capture email_icon %}{% include icon-email.svg %}{% endcapture %}
+            <li>
+              {% include contact_icon.html className="email" url="" accessible_text="Email me" icon=email_icon %}
+              <script>document.querySelector('.contact-list .email').href = ["mai", "lto:", "{{ site.email | encode_email }}"].join("")</script>
+            </li>
+          {% endif %}
+          {% if site.linkedin_username %}
+            {% capture linkedin_url %}https://www.linkedin.com/in/{{ site.linkedin_username }}/{% endcapture %}
+            {% capture linkedin_icon %}{% include icon-linkedin.svg %}{% endcapture %}
+            <li>{% include contact_icon.html className="linkedin" url=linkedin_url accessible_text="LinkedIn" icon=linkedin_icon %}</li>
+          {% endif %}
           {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
+            {% capture twitter_url %}https://twitter.com/{{ site.twitter_username }}/{% endcapture %}
+            {% capture twitter_icon %}{% include icon-twitter.svg %}{% endcapture %}
+            <li>{% include contact_icon.html className="twitter" url=twitter_url accessible_text="Twitter" icon=twitter_icon %}</li>
           {% endif %}
         </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
       </div>
     </div>
-
-  </div>
-
+  </section>
 </footer>

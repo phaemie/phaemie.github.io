@@ -13,22 +13,37 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Phaemie Ng, UX Designer for the Web"
-# email: phaemie@gmail.com
+title: "Phaemie Ng"
+logo: "logo.png"
+repository: "phaemie/phaemie.github.io"
+email: contact@phaemie.com
 description: The personal site of Phaemie Ng
 baseurl: "" # the subpath of your site, e.g. /blog
 prod_host: phaemie.com
 url: "https://phaemie.com" # the base hostname & protocol for your site, e.g. http://example.com
-enforce_ssl: phaemie.com 
-# twitter_username: phaemie
-# github_username:  phaemie
+enforce_ssl: phaemie.com
+linkedin_username: phaemieng
+twitter_username: phaemie
 
 # Build settings
 markdown: kramdown
 theme: minima
 gems:
-  - jekyll-feed
+  - webrick
+  - jekyll-svg-plugin
+  - jekyll-email-protect
 exclude:
   - Gemfile
   - Gemfile.lock
   - .gitignore
+collections:
+  case_studies:
+    output: true
+    permalink: /case-study/:title
+defaults:
+  -
+    scope:
+      path: ""
+      type: case_studies
+    values:
+      layout: "case_study"

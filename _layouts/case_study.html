@@ -1,0 +1,31 @@
+---
+layout: base
+---
+{% include header.html %}
+<main class="page-content" aria-label="Content">
+  <article class="post">
+    <header class="post-header">
+      <div class="wrapper">
+        <span class="post-type">Case study</span>
+        <h1 class="post-title">{{ page.title | escape }}</h1>
+        <span>{{ page.subtitle | escape }}</span>
+      </div>
+    </header>
+    <div class="wrapper">
+      <img class="hero-image" src="{{ page.image }}" alt="{{ page.title | append: " screenshot" | escape}}" />
+      <div class="post-content">
+        {{ content }}
+      </div>
+      {% assign curr = false %}
+      {% for study in site.case_studies %}
+        {% if curr %}{% assign curr = false %}
+          <div class="next-post">
+            <a href="{{study.url | relative_url }}">Next case study ({{ study.title | escape }})</a>
+          </div>
+        {% endif %}
+        {% if study.title == page.title %}{% assign curr = true %}{% endif %}
+      {% endfor %}
+    </div>
+  </article>
+</main>
+{% include footer.html %}

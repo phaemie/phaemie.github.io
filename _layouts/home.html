@@ -1,25 +1,33 @@
 ---
-layout: default
+layout: base
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-  
-  {{ content }}
-
+{% include header.html %}
+<header class="home-header">
+  <div class="wrapper">
+    <h1>UX design <span class="sub">to solve problems and delight</span></h1>
+    <p>The UX portfolio of Phaemie Ng</p>
+  </div>
+</header>
+<main class="page-content home" aria-label="Content">
+  <div class="wrapper">
+    <h2 class="page-heading">Case Studies</h2>
+  </div>
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for study in site.case_studies %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
+        <a class="post-list-item" href="{{ study.url | relative_url }}">
+          <div class="wrapper">
+            {% capture image_alt %}{% if study.image_alt %}{{ study.image_alt }}{% else %}{{ study.title | append: " screenshot" }}{% endif %}{% endcapture %}
+            <img class="post-image" src="{{ study.image | prepend: "assets/" | relative_url }}" alt="{{ image_alt | escape }}" />
+            <div class="column">
+              <span class="post-meta">{{ study.project_type | escape }}</span>
+              <h2 class="post-link">{{ study.title | escape }}</h2>
+              {{ study.excerpt }}
+            </div>
+          </div>
+        </a>
       </li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-
-</div>
+</main>
+{% include footer.html %}

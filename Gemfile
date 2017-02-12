@@ -20,6 +20,8 @@ gem "github-pages", group: :jekyll_plugins
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-   gem "jekyll-feed", "~> 0.6"
+   gem 'webrick'
    gem 'jekyll-compose', "~> 0.5"
+   gem 'jekyll-email-protect'
+   gem 'jekyll-svg-plugin'
 end
