@@ -3,7 +3,7 @@
   <div class="wrapper">
     <a class="site-title" href="{{ "/" | relative_url}}">
       {% if site.logo %}
-        <img src="{{ "assets/" + site.logo | relative_url }}" alt="{{ site.title | escape }}" />
+        <img src="{{ site.logo | prepend: "assets/" | relative_url }}" alt="{{ site.title | escape }}" height=42 width=140 />
       {% else %}
           {{ site.title | escape }}
       {% endif %}
