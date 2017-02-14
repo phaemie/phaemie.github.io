@@ -76,14 +76,19 @@ We tossed around a few user journeys and ultimately settled on a gallery-led jou
 Building the interface followed the flow: sketch > wireframe > prototype > code.
 
 ### Sketches on paper
-=> [ gallery sketches] (caption: Exploring options for the gallery)
 
 Sketching major parts of the site with pencil and paper allowed me to quickly iterate design ideas and user flows. Without getting attached to any idea, I could critically think through them before selecting options to pursue.
 
-### Wireframes on Sketch
-=> [picture of wireframes - galleryWireframeSketch.jpg]
+![Sketches exploring layouts for the gallery](/assets/sketchesGallery.jpg)
+Sketches exploring possible layouts for the gallery.
 
-I used Sketch for creating higher fidelity mock ups, testing if ideas would work practically like juxtaposing text against images. I made a conscious decision to create wireframes in Sketch itself rather than in other programs like Omnigraffle or Balsamiq to critically think about elements on the page and to streamline the workflow rather than using different software for different purposes. I was also able to view changes and evolution of the design all in one document. (Moving forward, I am keen to use plugins like Wixel to help with wireframing).
+### Wireframes on Sketch
+
+I used Sketch for creating higher fidelity mock ups, testing if ideas would work practically like juxtaposing text against images. 
+
+![Wireframes exploring layouts for the gallery](/assets/galleryWireframeSketch.jpg)
+
+I made a conscious decision to create wireframes in Sketch itself rather than in other programs like Omnigraffle or Balsamiq to critically think about elements on the page and to streamline the workflow rather than using different software for different purposes. I was also able to view changes and evolution of the design all in one document. (Moving forward, I am keen to use plugins like Wixel to help with wireframing).
 
 ## TESTING
 ===> [screenshot of mock ups in Invision]
@@ -96,7 +101,7 @@ I used InVision to test the mock ups. There were two main areas I was unsure of:
 ### Online shop: Conforming to conceptual models
 Research showed that only after people have looked at images would they even consider purchasing a print. This is opposed to the behavior of browsing or window shopping which sees a person enter with an intent to compare and purchase. We designed for this behavior by locating the purchase process flow in a zoomed image, meaning that a user had specifically intended to find out more about an image. 
 
-=> [buy now button in zoomed image]
+![Beginning the purchase process](/assets/zoomedGalleryPurchase.jpg)
 
 Despite this behavior, preliminary testing showed that at a glance, users didn't realise they could purchase things on this site at all. It was lacking any indicators; the navigation and design didn't fit a conceptual model of an online store. I fixed this by adding a shop page and altered the navigation to make 'Shop’ clearly signify the ability to purchase something. On hindsight, this design change felt obvious and further testing showed that users found the new navigation clearer as to the functions of the site. 
 
