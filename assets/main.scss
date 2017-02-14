@@ -341,9 +341,7 @@ ul {
 
 .post-meta {
     text-transform: uppercase;
-    border-radius: 4px;
-    background-color: $four;
-    padding: 4px 4px 2px;
+    font-size: $base-font-size - 4px;
 }
 
 .post-content {
