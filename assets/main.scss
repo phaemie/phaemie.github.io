@@ -316,6 +316,10 @@ ul {
                     background-color: $three;
                     color: $five;
 
+                    .post-meta {
+                        background-color: $two;
+                    }
+
                     @include media-query($on-laptop) {
                         .column::after {
                             background: transparent linear-gradient(to bottom, rgba(255,255,255,0) 0, $three ($base-font-size * 2));
@@ -330,6 +334,13 @@ ul {
 .post-header {
     background-color: $two;
     color: $five;
+}
+
+.post-meta {
+    text-transform: uppercase;
+    border-radius: 4px;
+    background-color: $four;
+    padding: 4px 4px 2px;
 }
 
 .post-content {
