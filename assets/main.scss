@@ -178,11 +178,14 @@ ul {
 }
 .post-content {
     margin: $spacing-unit auto;
+    max-width: ($column-width + $gutter-width) * 6;
     @include media-query($on-laptop) {
+        // in this range, the text isn't so wide that it hits the max-width, and yet
+        // we want to make it narrower than the section above
         margin: $spacing-unit ($column-width + $gutter-width) / 2;
     }
     @include media-query($on-desktop) {
-        margin: $spacing-unit ($column-width + $gutter-width);
+        margin: $spacing-unit auto; // max-width is enough to keep the margin big
     }
 }
 .next-post {
