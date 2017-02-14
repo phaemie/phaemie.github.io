@@ -12,7 +12,7 @@ layout: base
       </div>
     </header>
     <div class="wrapper">
-      <img class="hero-image" src="{{ page.image }}" alt="{{ page.title | append: " screenshot" | escape}}" />
+      <img class="hero-image" src="{{ page.image | prepend: "assets/" | relative_url }}" alt="{{ page.title | append: " screenshot" | escape}}" />
       <div class="post-content">
         {{ content }}
       </div>
