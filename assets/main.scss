@@ -141,6 +141,10 @@ ul {
         justify-content: flex-start;
     }
 
+    .footer-col-2 {
+        margin-top: $spacing-unit;
+    }
+
     @include media-query($on-laptop) {
         .footer-col-wrapper {
             flex-direction: row;
@@ -149,10 +153,6 @@ ul {
 
         .footer-col {
             margin-right: 3 * $spacing-unit;
-        }
-
-        .footer-col-2 {
-            margin-top: $spacing-unit;
         }
     }
 
@@ -263,6 +263,10 @@ ul {
                     }
                 }
 
+                .column {
+                    padding-top: $spacing-unit / 2;
+                }
+
                 @include media-query($on-laptop) {
                     height: 200px + (2 * $spacing-unit);
 
@@ -278,6 +282,7 @@ ul {
 
                     .column {
                         height: 100%;
+                        padding-top: 0;
                         padding-bottom: $base-font-size * $base-line-height;
                         position: relative;
                         overflow: hidden;

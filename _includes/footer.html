@@ -8,9 +8,9 @@
         {% comment %}</div></div></div>{% endcomment %}
       </div>
       <div class="footer-col footer-col-2">
-        {% for page in site.pages %}
-          {% if page.footer %}
-            {{ page.content }}
+        {% for footer_page in site.pages %}
+          {% if footer_page.footer %}
+            {{ footer_page.content | markdownify }}
           {% endif %}
         {% endfor %}
         <ul class="contact-list">
