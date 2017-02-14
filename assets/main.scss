@@ -150,6 +150,10 @@ ul {
         .footer-col {
             margin-right: 3 * $spacing-unit;
         }
+
+        .footer-col-2 {
+            margin-top: $spacing-unit;
+        }
     }
 
     .contact-list {
@@ -162,6 +166,10 @@ ul {
     }
 }
 
+.post-header > .wrapper {
+    padding-top: $spacing-unit;
+    padding-bottom: $spacing-unit;
+}
 .hero-image {
     width: 100%;
 }
@@ -169,12 +177,12 @@ ul {
     padding-bottom: 3 * $spacing-unit;
 }
 .post-content {
-    margin: 0 auto;
+    margin: $spacing-unit auto;
     @include media-query($on-laptop) {
-        margin: 0 ($column-width + $gutter-width) / 2;
+        margin: $spacing-unit ($column-width + $gutter-width) / 2;
     }
     @include media-query($on-desktop) {
-        margin: 0 ($column-width + $gutter-width);
+        margin: $spacing-unit ($column-width + $gutter-width);
     }
 }
 .next-post {
