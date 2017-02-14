@@ -5,7 +5,7 @@ With the help of stunning astrophotography, I helped give people an opportunity 
 date:   2016-12-24 10:11:39 +1100
 categories: jekyll update
 project_type: "Responsive site"
-image: "astrordinaryResponsive.jpg"
+image: "AstrordinaryResponsive.jpg"
 image_alt: "Milky Way in the night  sky"
 excerpt: "A responsive site that enables easy viewing of high resolution images of the Milky Way."
 ---
@@ -86,7 +86,7 @@ Sketches exploring possible layouts for the gallery.
 
 ### Wireframes on Sketch
 
-I used Sketch for creating higher fidelity mock ups, testing if ideas would work practically like juxtaposing text against images. 
+I used Sketch for creating higher fidelity mock ups, testing if ideas would work practically like juxtaposing text against images.
 
 ![Wireframes exploring layouts for the gallery](/assets/galleryWireframeSketch.jpg)
 
