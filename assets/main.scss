@@ -360,6 +360,18 @@ ul {
     }
 }
 
+// components
+
+table.image {
+    margin: 0 auto;
+    max-width: 100%;
+
+    caption {
+        font-size: $base-font-size - 6px;
+        color: $three;
+    }
+}
+
 .hexagon {
     overflow: hidden;
     visibility: hidden;
