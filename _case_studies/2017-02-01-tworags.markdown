@@ -56,7 +56,7 @@ For the [product-solution-fit](https://medium.com/@jaf_designer/why-product-thin
 * A foldable shell for discreetly transporting soiled pads for washing later.
 * Discreet pouch to contain clean and soiled pads.
 
-`![Reusable pad prototypes](/assets/TRprototype.jpg "Prototypes ready for testing")`
+![Reusable pad prototypes](/assets/TRprototype.jpg "Prototypes ready for testing")
 
 ### Testing
 I iterated on the prototypes till I got a shape and pattern that I felt comfortable to test. I created a few prototypes to send out to volunteers to test over a few months and report to me how they worked. User testing returned feedback that the cloth pads and inserts were comfortable and absorbent. Some noted that it was even a beautiful product too. 
