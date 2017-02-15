@@ -252,7 +252,7 @@ ul {
     }
 
     h1 .sub {
-        font-size: $base-font-size;
+        font-size: $base-font-size * 1.5;
         display: inline-block;
         width: 100%;
     }
@@ -450,7 +450,10 @@ ul {
     letter-spacing: 1px;
 }
 
-.home-header h1, .page-heading, .footer-heading {
+.home-header {
+    color: $three;
+}
+.page-heading, .footer-heading {
     color: $two;
 }
 
