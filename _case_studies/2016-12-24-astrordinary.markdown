@@ -66,7 +66,7 @@ Many expressed appreciation for the raw, natural beauty of the night sky capture
 
 These images inspired many amateurs and photographers alike to learn more about panoramic techniques, equipment and shooting locations. People were interested in the background of how the images were taken.
 
-#### 1. The images personify a sense of adventure
+#### 3. The images personify a sense of adventure
 Many users felt the images captured a 'carpe diem' type of ethos to get out there and experience the world. They mentioned activities like camping, stargazing and road trips. This sense of adventure seemed to have an egalitarian quality about it which the photographer aptly summed up as "The night sky is for all to see". The fact that in reality, many don't get to see the Milky Way where they are is irrelevant to the spirit of adventure. In addition, many people expressed interest in connection, such as meeting up to go on photoshoots.
 
 
@@ -139,7 +139,3 @@ The changes to the gallery and shop felt obvious and improved the flow significa
 ## DESIGN
 
 ![Laptop](/assets/MacBookShowcase.jpg)
-
-LEARNINGS AND REFLECTION
-
-IMPACT
