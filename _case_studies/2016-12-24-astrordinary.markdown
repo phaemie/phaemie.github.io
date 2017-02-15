@@ -40,7 +40,7 @@ I followed every single post and looked at Astrordinary images using a VR headse
 
 One other thing I wanted to do was tag along and live witness an astrophotography shoot. But my one and only chance on a short visit to Perth didn’t pan out; the night was cloudy and unsuitable for night photography. Oh well.
 
-## DISCOVERY (Personas, problem framing, empathy with users, emotional states)
+## DISCOVERY
 
 {% include image.html caption="Making sense in the discovery phase (lots more like these)" url="/assets/discovery.jpg" alt="Discovery findings" %}
 
