@@ -1,7 +1,9 @@
 ---
 title:  "Astrordinary"
-subtitle: "The Milky Way has inspired humanity for millennia. But today, light pollution means many won't get to see it for themselves.
-Through stunning astrophotography, I helped give people a chance to do so."
+subtitle: |
+  The Milky Way has inspired humanity for millennia. But today, light pollution means many won't get to see it for themselves.
+
+  Through stunning astrophotography, I helped give people a chance to do so.
 date:   2016-12-24 10:11:39 +1100
 categories: jekyll update
 project_type: "Responsive site"
