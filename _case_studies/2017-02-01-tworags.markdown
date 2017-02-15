@@ -44,6 +44,9 @@ Together with studies, the information I gathered from the discovery phase helpe
 
 
 ## PROTOTYPING
+
+{% include image.html caption="Trying out different shapes and patterns" url="/assets/EarlyPrototypes.jpg" alt="Early prototypes for a reusable pad" %}
+
 I thought about a few ideas like creating low-cost disposable pads made from recycled waste and biodegradable pads. But these solutions didn't confront both the problems of supply and disposal. Nothing stuck as well as an obvious solution did; a reusable fabric sanitary pad. Easy to make and long lasting. A washable pad built on these girls’ mental models of using, washing and reusing cloth and a desire for using sanitary pads to manage their periods.
 
 I quickly tested and selected fabrics that were quick drying and absorbent. I tested a variety of layers and materials before creating a prototype consisting of layers of terry (like a towel) and a top layer of flannelette.
@@ -59,9 +62,15 @@ For the [product-solution-fit](https://medium.com/@jaf_designer/why-product-thin
 ![Reusable pad prototypes](/assets/TRprototype.jpg "Prototypes ready for testing")
 
 ### Testing
-I iterated on the prototypes till I got a shape and pattern that I felt comfortable to test. I created a few prototypes to send out to volunteers to test over a few months and report to me how they worked. User testing returned feedback that the cloth pads and inserts were comfortable and absorbent. Some noted that it was even a beautiful product too. 
+I iterated on the prototypes till I got a pattern and combination of materials in layers that I felt comfortable to test. I tested out this combination:
+
+![Cross section of materials used](/assets/crossSectionDiagram.png "Cross section of materials used in prototype")
+
+I created a few prototypes to send out to volunteers to test over a few months and report to me how they worked. User testing returned feedback that the cloth pads and inserts were comfortable and absorbent. Some noted that it was even a beautiful product too. 
 
 One area of feedback to fix was that the snaps were weak and after a few uses, some of the snaps loosened, rendering the entire pad useless. This wasn't too alarming. For the prototypes, the snaps had been applied by hand and hammer but for production, stronger snaps would be machine-applied.
+
+![The reusable pad solution](/assets/TRsample.jpg "The full solution")
 
 ## LEARNINGS AND REFLECTION
 
