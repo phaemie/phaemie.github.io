@@ -138,6 +138,3 @@ The changes to the gallery and shop felt obvious and improved the flow significa
 
 ![Laptop](/assets/MacBookShowcase.jpg)
 
-LEARNINGS AND REFLECTION
-
-IMPACT
