@@ -8,11 +8,13 @@
         {% comment %}</div></div></div>{% endcomment %}
       </div>
       <div class="footer-col footer-col-2">
-        {% for footer_page in site.pages %}
-          {% if footer_page.footer %}
-            {{ footer_page.content | markdownify }}
-          {% endif %}
-        {% endfor %}
+        <div class="footer-blob">
+          {% for footer_page in site.pages %}
+            {% if footer_page.footer %}
+              {{ footer_page.content | markdownify }}
+            {% endif %}
+          {% endfor %}
+        </div>
         <ul class="contact-list">
           {% if site.email %}
             {% capture email_icon %}{% include icon-email.svg %}{% endcapture %}

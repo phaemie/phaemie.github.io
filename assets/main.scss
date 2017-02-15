@@ -4,7 +4,9 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$fallback-fonts: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: Gotham, $fallback-fonts;
+$heading-font-family: DIN, $fallback-fonts;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -36,6 +38,8 @@ $on-laptop:        755px; // 7 columns + 8 gutters
 $on-desktop:       1070px; // 10 columns + 11 gutters
 //$on-desktop:       1280px; // 12 columns + 13 gutters
 
+$arrow-size: 64px;
+
 @font-face{
     font-family: "Gotham";
     src: url('/assets/GothamBook.ttf');
@@ -43,7 +47,7 @@ $on-desktop:       1070px; // 10 columns + 11 gutters
 
 @font-face{
     font-family: "DIN";
-    src: url('/assets/DINRegularAlternate.ttf');
+    src: url('/assets/DINmedium.ttf');
 }
 
 @mixin media-query($device) {
@@ -132,13 +136,14 @@ ul {
 }
 
 .site-footer {
-    padding: (2 * $spacing-unit) 0 $spacing-unit;
+    padding: (3 * $spacing-unit) 0 $spacing-unit;
 
     .footer-col-wrapper {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
+        margin-top: 3 * $spacing-unit;
     }
 
     .footer-col-2 {
@@ -151,7 +156,7 @@ ul {
             align-items: flex-start;
         }
 
-        .footer-col {
+        .footer-col-1 {
             margin-right: 3 * $spacing-unit;
         }
     }
@@ -166,9 +171,15 @@ ul {
     }
 }
 
-.post-header > .wrapper {
-    padding-top: $spacing-unit;
-    padding-bottom: $spacing-unit;
+.post-header {
+    > .wrapper {
+        padding-top: $spacing-unit;
+        padding-bottom: $spacing-unit;
+    }
+
+    .post-title {
+        margin-top: 2 * $spacing-unit;
+    }
 }
 .hero-image {
     width: 100%;
@@ -191,6 +202,25 @@ ul {
 .next-post {
     text-align: right;
     margin-top: 3 * $spacing-unit;
+
+    a, a:hover, a:visited {
+        text-decoration: none;
+        vertical-align: middle;
+        color: $three;
+    }
+    a:active {
+        color: $two;
+    }
+
+    .arrow {
+        margin-left: $spacing-unit;
+        vertical-align: middle;
+        color: $four;
+        font-size: $arrow-size;
+        line-height: 1;
+        position: relative;
+        top: 2px; // fudging for vertical alignment
+    }
 }
 
 // styles
@@ -204,6 +234,9 @@ ul {
     .contact-list li path {
         fill: $four;
     }
+}
+.footer-blob {
+    letter-spacing: 1px;
 }
 
 
@@ -227,10 +260,13 @@ ul {
 
 .home {
     $bg-color: $five;
-    $arrow-size: 16px;
 
     background-color: $bg-color;
-    padding: ($spacing-unit * 2) 0 ($spacing-unit * 4);
+    padding: ($spacing-unit * 3) 0 ($spacing-unit * 4);
+
+    .page-heading {
+        margin-bottom: $spacing-unit * 2;
+    }
 
     .post-list {
         > li {
@@ -255,11 +291,12 @@ ul {
                     position: relative;
 
                     &::after {
-                        content: '➡';
+                        content: '➞';
                         color: $four;
-                        position: absolute;
-                        bottom: -$arrow-size;
-                        right: $arrow-size;
+                        display: block;
+                        text-align: right;
+                        font-size: $arrow-size;
+                        line-height: 1;
                     }
                 }
 
@@ -275,8 +312,11 @@ ul {
                         display: flex;
                         align-items: flex-start;
                         justify-content: flex-start;
+
                         &::after {
+                            position: absolute;
                             bottom: 0;
+                            right: 0;
                         }
                     }
 
@@ -302,7 +342,7 @@ ul {
                     .post-image {
                         height: 100%;
                         width: (3 * $column-width) + (2 * $gutter-width);
-                        margin-right: $gutter-width;
+                        margin-right: $gutter-width * 2;
                     }
                 }
 
@@ -310,7 +350,7 @@ ul {
                     > .wrapper {
                         padding: 0 ($column-width + $gutter-width);
                         &::after {
-                            right: $arrow-size + $column-width + $gutter-width;
+                            right: $column-width + $gutter-width;
                         }
                     }
                     height: 270px + (2 * $spacing-unit);
@@ -323,10 +363,6 @@ ul {
                 &:hover {
                     background-color: $three;
                     color: $five;
-
-                    .post-meta {
-                        background-color: $two;
-                    }
 
                     @include media-query($on-laptop) {
                         .column::after {
@@ -347,9 +383,29 @@ ul {
 .post-meta {
     text-transform: uppercase;
     font-size: $base-font-size - 4px;
+    letter-spacing: 1px;
+}
+.post-title {
+    letter-spacing: 2px;
+}
+.post-subtitle {
+    font-size: $base-font-size - 2px;
+    letter-spacing: 0.5px;
 }
 
 .post-content {
+    letter-spacing: 1px;
+
+    a, a:hover {
+        color: $three;
+    }
+    a:visited {
+        color: $four;
+    }
+    a:active {
+        color: $two;
+    }
+
     ul {
         list-style-type: disc;
         margin-left: $spacing-unit;
@@ -361,17 +417,53 @@ ul {
         margin: 0 auto;
         display: block;
     }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: $heading-font-family;
+        letter-spacing: 1px;
+    }
+
+    h1, h2 {
+        color: $three;
+        margin-top: 1.5 * $spacing-unit;
+    }
+    h3, h4, h5, h6 {
+        color: $two;
+    }
+
+    h2 {
+        font-size: $base-font-size + 2px;
+    }
+    h3 {
+        font-size: $base-font-size;
+    }
+    h4, h5, h6 {
+        color: $one;
+        font-weight: 100;
+        font-size: $base-font-size;
+        letter-spacing: 0;
+    }
+}
+
+.home-header h1, .page-heading, .footer-heading, .post-header .post-meta {
+    font-family: $heading-font-family;
+    letter-spacing: 1px;
+}
+
+.home-header h1, .page-heading, .footer-heading {
+    color: $two;
 }
 
 // components
 
 table.image {
-    margin: 0 auto;
+    margin: 0 auto $spacing-unit;
     max-width: 100%;
 
     caption {
-        font-size: $base-font-size - 6px;
+        font-size: $base-font-size - 4px;
         color: $three;
+        margin-top: $spacing-unit / 2;
     }
 }
 

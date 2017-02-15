@@ -1,8 +1,9 @@
 ---
 title:  "Two Rags"
-subtitle: "Feminine hygiene is something many take for granted. But sometimes, getting a period can be stressful if you live in a place with few amenities and supplies. 
+subtitle: |
+  Feminine hygiene is something many take for granted. But sometimes, getting a period can be stressful if you live in a place with few amenities and supplies.
 
-I took on an IDEO.org style of social innovation design challenge: Make it easier for girls and women in rural areas to manage their periods."
+  I took on an IDEO.org style of social innovation design challenge: Make it easier for girls and women in rural areas to manage their periods.
 date:   2016-12-24 10:11:39 +1100
 categories: jekyll update
 project_type: "Human-centered design challenge"
@@ -12,14 +13,14 @@ excerpt: "A challenge to design a solution to a real world problem: the difficul
 ---
 
 ## THE CHALLENGE
-In recent years, there have been several studies (like [this one](https://www.unicef.org/wash/schools/files/4_UNICEF_Rajashi_PPT_(Final).pdf)) around the state of menstrual hygiene management (MHM) in India. It’s hard to objectively quantify a sensitive topic like women’s health and each study produced different but overlapping statistics. But the gist was clear. Menstrual hygiene practices were generally poor and often showed strong correlations with socioeconomic factors. 
+In recent years, there have been several studies (like [this one](https://www.unicef.org/wash/schools/files/4_UNICEF_Rajashi_PPT_(Final).pdf)) around the state of menstrual hygiene management (MHM) in India. It’s hard to objectively quantify a sensitive topic like women’s health and each study produced different but overlapping statistics. But the gist was clear. Menstrual hygiene practices were generally poor and often showed strong correlations with socioeconomic factors.
 
 Studies explored taboos, practices, coping mechanisms and health impacts of poor menstrual hygiene management on such a large scale (there are over 300 million women with periods in India). The main barriers identified included difficulty accessing disposable pads (due to cost, availability or cultural practices), lack of toilets and cleaning facilities like running water and rudimentary disposal systems. There was even talk about girls skipping school during their periods due to stress and embarrassment. Other practical problems included washing and drying soiled clothing and sanitary products discreetly, in a body of water (no washing machine!).
 
 ## THE APPROACH
 There are so many moving parts to this problem that I doubt one solution can fix them all. Some solutions relied on improving infrastructure like bathrooms, sewage and refuse collection. Others relied on education and tackling specific social and cultural practices. It was beyond my ability to solve everything.
 
-Nonetheless I gave it a go to design a solution for part of it. In a large and diverse country like India, it’s impossible to make sweeping generalisations about the user so I approached this problem on a community-level, finding a solution for managing within the system. 
+Nonetheless I gave it a go to design a solution for part of it. In a large and diverse country like India, it’s impossible to make sweeping generalisations about the user so I approached this problem on a community-level, finding a solution for managing within the system.
 
 ## DISCOVERY
 
@@ -27,15 +28,15 @@ Nonetheless I gave it a go to design a solution for part of it. In a large and d
 I researched and approached NGOs, startups and organisations dealing in similar areas who might have insight and context. Each focused on a different group of people, so it’s no wonder they had different solutions and takes on the problem such as creating a curriculum that teaches schoolgirls about their biological functions.
 
 ### Group interview (survey) and primary research
-To provide a snapshot of a community, I commissioned a survey of 100 girls and women in a rural village in Bengal. I had a local lady find out about habits, product/s used and reasons for doing so. After each interview, the participant was thanked with some chocolate. The results showed that most people used cloth like old torn up sari as they were cost effective, and expressed genuine interest in using pads. 
+To provide a snapshot of a community, I commissioned a survey of 100 girls and women in a rural village in Bengal. I had a local lady find out about habits, product/s used and reasons for doing so. After each interview, the participant was thanked with some chocolate. The results showed that most people used cloth like old torn up sari as they were cost effective, and expressed genuine interest in using pads.
 
-The main challenge I found in conducting primary research was finding ways to overcome cultural differences, such as overcoming the polite barrier to get users to speak honestly. 
+The main challenge I found in conducting primary research was finding ways to overcome cultural differences, such as overcoming the polite barrier to get users to speak honestly.
 
 ### Analogous inspiration: Modern cloth diapers
-To explore ideas on creating a high-absorbency product, I looked at an analogous example of modern cloth diapers. My memory of cloth nappies was a single sheet of cloth secured by a large safety pin. But cloth nappies have come a long way since, resembling disposable nappies in design with bells and whistles like inserts, waterproof linings and adjustable sizes.  
+To explore ideas on creating a high-absorbency product, I looked at an analogous example of modern cloth diapers. My memory of cloth nappies was a single sheet of cloth secured by a large safety pin. But cloth nappies have come a long way since, resembling disposable nappies in design with bells and whistles like inserts, waterproof linings and adjustable sizes.
 
 ### Pulling things together
-Ideally I would have also included methods like immersion into the community, guided tours of the user’s home and school environment and photojournaling. However, I was unable to travel at the time and had to make do with conducting research from Australia. 
+Ideally I would have also included methods like immersion into the community, guided tours of the user’s home and school environment and photojournaling. However, I was unable to travel at the time and had to make do with conducting research from Australia.
 
 Together with studies, the information I gathered from the discovery phase helped me hone in on constraints:
 
@@ -66,7 +67,7 @@ I iterated on the prototypes till I got a pattern and combination of materials i
 
 ![Cross section of materials used](/assets/crossSectionDiagram.png "Cross section of materials used in prototype")
 
-I created a few prototypes to send out to volunteers to test over a few months and report to me how they worked. User testing returned feedback that the cloth pads and inserts were comfortable and absorbent. Some noted that it was even a beautiful product too. 
+I created a few prototypes to send out to volunteers to test over a few months and report to me how they worked. User testing returned feedback that the cloth pads and inserts were comfortable and absorbent. Some noted that it was even a beautiful product too.
 
 One area of feedback to fix was that the snaps were weak and after a few uses, some of the snaps loosened, rendering the entire pad useless. This wasn't too alarming. For the prototypes, the snaps had been applied by hand and hammer but for production, stronger snaps would be machine-applied.
 

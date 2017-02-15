@@ -6,9 +6,9 @@ layout: base
   <article class="post">
     <header class="post-header">
       <div class="wrapper">
-        <span class="post-type">Case study</span>
+        <span class="post-meta">Case studies</span>
         <h1 class="post-title">{{ page.title | escape }}</h1>
-        <span>{{ page.subtitle | escape }}</span>
+        <span class="post-subtitle">{{ page.subtitle | markdownify }}</span>
       </div>
     </header>
     <div class="wrapper">
@@ -20,7 +20,7 @@ layout: base
       {% for study in site.case_studies %}
         {% if curr %}{% assign curr = false %}
           <div class="next-post">
-            <a href="{{study.url | relative_url }}">Next case study ({{ study.title | escape }})</a>
+            <a href="{{study.url | relative_url }}">Next case study ({{ study.title | escape }}) <span class="arrow">➞</span></a>
           </div>
         {% endif %}
         {% if study.title == page.title %}{% assign curr = true %}{% endif %}
