@@ -38,7 +38,7 @@ $on-desktop:       1070px; // 10 columns + 11 gutters
 
 @font-face{
     font-family: "Gotham";
-    src: url('/assets/GOTHAM-MEDIUM.ttf');
+    src: url('/assets/GothamBook.ttf');
 }
 
 @font-face{
@@ -141,6 +141,10 @@ ul {
         justify-content: flex-start;
     }
 
+    .footer-col-2 {
+        margin-top: $spacing-unit;
+    }
+
     @include media-query($on-laptop) {
         .footer-col-wrapper {
             flex-direction: row;
@@ -149,10 +153,6 @@ ul {
 
         .footer-col {
             margin-right: 3 * $spacing-unit;
-        }
-
-        .footer-col-2 {
-            margin-top: $spacing-unit;
         }
     }
 
@@ -263,6 +263,10 @@ ul {
                     }
                 }
 
+                .column {
+                    padding-top: $spacing-unit / 2;
+                }
+
                 @include media-query($on-laptop) {
                     height: 200px + (2 * $spacing-unit);
 
@@ -278,6 +282,7 @@ ul {
 
                     .column {
                         height: 100%;
+                        padding-top: 0;
                         padding-bottom: $base-font-size * $base-line-height;
                         position: relative;
                         overflow: hidden;
@@ -341,9 +346,7 @@ ul {
 
 .post-meta {
     text-transform: uppercase;
-    border-radius: 4px;
-    background-color: $four;
-    padding: 4px 4px 2px;
+    font-size: $base-font-size - 4px;
 }
 
 .post-content {
@@ -357,6 +360,18 @@ ul {
         max-width: 100%;
         margin: 0 auto;
         display: block;
+    }
+}
+
+// components
+
+table.image {
+    margin: 0 auto;
+    max-width: 100%;
+
+    caption {
+        font-size: $base-font-size - 6px;
+        color: $three;
     }
 }
 

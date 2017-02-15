@@ -20,7 +20,7 @@ The spectacular Milky Way has inspired stories, songs and space exploration for 
 
 My brother created Astrordinary in 2015 to photograph and share high-resolution panoramas and VR photospheres of the galaxy and near space as seen from Western Australia. Virtual reality was going mainstream, which enabled him to give people a virtual view of the Milky Way. Many people had never seen anything like it and shared them, as did tourism organisations, photographers and VR apps. The community of ‘earthlings’ soon grew organically, concentrated on a variety of social media.
 
-![Astrordinary 360 photosphere](<iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1487118076381!6m8!1m7!1sF%3A-86lA2LIrQYs%2FWBVA5kIIpGI%2FAAAAAAAABPg%2FENeAc05tKSorFktQ5KcYHPpeh58dsYmqgCLIB!2m2!1d-32.7452381!2d115.6540015!3f315.1011688105441!4f14.124768105135018!5f1.0563179781450818" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>)
+<iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1487118076381!6m8!1m7!1sF%3A-86lA2LIrQYs%2FWBVA5kIIpGI%2FAAAAAAAABPg%2FENeAc05tKSorFktQ5KcYHPpeh58dsYmqgCLIB!2m2!1d-32.7452381!2d115.6540015!3f315.1011688105441!4f14.124768105135018!5f1.0563179781450818" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 Apart from viewing images, some had requested to purchase prints and a website with a gallery and online store was setup to quickly meet this demand. I proposed that we work together to build a responsive site that would be a complete experience for users to browse images, easily purchase prints and get more involved in astrophotography.
 
