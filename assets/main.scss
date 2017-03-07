@@ -459,6 +459,27 @@ ul {
 
 // components
 
+a.link-button {
+    border: 2px solid $three;
+    color: $three;
+    background-color: $six;
+    font-size: $base-font-size - 4;
+    padding: $spacing-unit/2;
+    display: table;
+    margin: $spacing-unit auto;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:visited, &:active {
+        color: $three; // override post-content stuff for links
+    }
+
+    &:hover {
+        color: $six;
+        background-color: $three;
+    }
+}
+
 table.image {
     margin: 0 auto $spacing-unit;
     max-width: 100%;

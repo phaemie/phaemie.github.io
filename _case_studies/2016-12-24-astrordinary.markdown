@@ -139,3 +139,5 @@ The changes to the gallery and shop felt obvious and improved the flow significa
 ## DESIGN
 
 ![Laptop](/assets/MacBookShowcase.jpg)
+
+{% include link-button.html text="See mobile prototype" url="https://invis.io/HYAK85FBW" newTab=true %}
