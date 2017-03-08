@@ -4,7 +4,7 @@ subtitle: |
   Creating a faster, easier way to tackle a stock take.
 date:   2016-12-24 10:11:39 +1100
 categories: jekyll update
-project_type: "Design sprint"
+project_type: "Mobile design sprint"
 image: "Inventory_Allprod.jpg"
 image_alt: "Inventory list"
 excerpt: "A challenge to design a quicker and easier way to do an inventory stock take."
