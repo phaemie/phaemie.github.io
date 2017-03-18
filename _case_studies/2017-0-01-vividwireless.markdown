@@ -11,7 +11,7 @@ excerpt: "A website making 4G broadband to accessible to people"
 ---
 
 ## BACKGROUND
-My first large task when I joined the vividwireless team was to redesign the website in the Web 2.0 era. The company was the first to offer 4G broadband in Australia had launched about half a year ago. High growth and expansion plans meant that they a more focused website to meet both its strategic needs and customer needs. 
+My first large task when I joined the vividwireless team was to redesign the website in the Web 2.0 era. The company was the first to offer 4G broadband in Australia had launched about half a year ago. High growth and expansion plans meant that they a more focused website to meet both its strategic needs and customer needs.
 
 ### Details
 Time: 6 months
@@ -23,7 +23,7 @@ Techniques: Stakeholder workshops, User journey mapping, Wireframing, Content Au
 ## THE PROBLEM AND OPPORTUNITY
 Choosing an Internet provider involves weighing factors like price, speeds, data usage and network across providers. Customers often carry out due diligence in forums, market comparison sites and visting stores.
 
-As a major customer touchpoint, the website was a massive opportunity to simplify this process and help people get connected. 
+As a major customer touchpoint, the website was a massive opportunity to simplify this process and help people get connected.
 
 ## GOALS
 The project goals involved balancing both customer and business needs to ensure a good online user experience for the entire customer journey. The core functions of the site (like an online shop and an account section) had already been decided prior to this project. Other than that, we had the freedom to design for a great user experience.
@@ -43,26 +43,26 @@ We were provided with customer profile segmensts and combined with data and insi
 
 These insights showed we had to focus on user needs relating to:
 
-* Understanding what they are getting (4G was new at the time) 
+* Understanding what they are getting (4G was new at the time)
 * Finding out if it's right for them (network coverage was still limited)
 * Finding the right device and plan for their circumstances
 * Easily purchasing the right device and plan
 
-Using task analysis, we identified what a user needed at each step of the flow and were ready to begin sketching. 
+Using task analysis, we identified what a user needed at each step of the flow and were ready to begin sketching.
 
-![homepage wireframe](/assets/vividHomepage.jpg)
+{% include image.html url="/assets/vividHomepage.jpg" alt="homepage wireframe" %}
 
 ## DESIGN
 
 ### Lean UX
-We collaborated and designed with a lean UX approach, working in rapid cycles and getting feedback as soon as possible. Under this approach, we made assumptions on how a user might use our site and what would help the user most, testing to validate assumptions as we went along. 
+We collaborated and designed with a lean UX approach, working in rapid cycles and getting feedback as soon as possible. Under this approach, we made assumptions on how a user might use our site and what would help the user most, testing to validate assumptions as we went along.
 
-We worked on mapping out the user flows, information architecture and wireframes for major sections such as the shop section. We paid special attention to iteratively designing the shop section, including designing helpful tools to users like a plan recommendation widget and a coverage map check. 
+We worked on mapping out the user flows, information architecture and wireframes for major sections such as the shop section. We paid special attention to iteratively designing the shop section, including designing helpful tools to users like a plan recommendation widget and a coverage map check.
 
 ### Card sorting and content audit
 We used open card sorting to help us work through organising the site structure, which helped us define the information hierarchy, navigation and content. We did face some challenges with labelling, as people used different terminology.
 
-![Draft sitemap](/assets/SitemapDraftvw.jpg)
+{% include image.html url="/assets/SitemapDraftvw.jpg" alt="Draft sitemap" %}
 
 For the content strategy, we had lots of existing content to audit and new ones to write. A challenge here was making sure that both the business and customers got what they needed from the content.
 
@@ -70,18 +70,18 @@ For the content strategy, we had lots of existing content to audit and new ones 
 
 ### User testing, Eye tracking and Expert analysis
 
-We collaborated with another agency for expert analysis of our design, user testing and eye tracking analysis. We had 20 people complete user tasks, such as find out what plan they should get and observed how they completed their tasks. 
+We collaborated with another agency for expert analysis of our design, user testing and eye tracking analysis. We had 20 people complete user tasks, such as find out what plan they should get and observed how they completed their tasks.
 
 Back at the office I also ran a separate user testing workshop on employees, challenging them to use the site with the fresh eyes of a user.
 
-Time and budget constraints meant we weren't able to create an interactive prototype, so instead, we tested on the wireframes for the information architecture and the user's mental models. 
+Time and budget constraints meant we weren't able to create an interactive prototype, so instead, we tested on the wireframes for the information architecture and the user's mental models.
 
 Overall, the users were overwhelmingly able to complete tasks. We also uncovered actionable findings like these:
 
 ### Designing for scanning
 Eye tracking analysis showed that people don't read but scan for information. Because of this, we designed for scanning with short and impactful headers and distinct card-like blocks.
 
-![home gateway product page, designing for scanning](/assets/homegatewayProductPage.jpg)
+{% include image.html url="/assets/homegatewayProductPage.jpg" alt="home gateway product page, designing for scanning" %}
 
 ### Increasing page-to-page flow
 We observed some users getting confused about how to move to other pages, such as returning to the homepage from the shop section. This led us to provide useful links to all users like a home icon and links to other useful pages in the user flow.
@@ -89,7 +89,8 @@ We observed some users getting confused about how to move to other pages, such a
 ## DELIVERY
 After design iterations based on our tests, we developed and tested the site in daily scrums. We also enlisted other team members to use the site while in the testing environment to uncover any issues we might have missed (none uncovered by this point).
 
-![Devices page](/assets/devicesPage.jpg)
-![Devices page](/assets/helpmechoose.jpg)
+{% include image.html url="/assets/devicesPage.jpg" alt="Devices page" %}
+
+{% include image.html url="/assets/helpmechoose.jpg" alt="Help Me Choose" %}
 
 After the site launch, we experienced an incremental rise in SEO rankings for keywords. Other teams were also able to use parts of the site more in campaigns as landing pages.

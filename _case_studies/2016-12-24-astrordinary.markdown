@@ -18,7 +18,7 @@ This was a major side project I took on with my brother. I served as a UX and UI
 
 ## THE CHALLENGE
 
-The spectacular Milky Way has inspired stories, songs and space exploration for ages. But today's stargazer might find it challenging to even see it in the night sky. Light pollution means that the Milky Way is [shrouded from view](http://www.theguardian.com/science/2016/jun/10/milky-way-no-longer-visible-to-one-third-of-humanity-light-pollution "Milky Way no longer visible to one third of humanity, light pollution atlas shows") for many people, especially those living in densely populated areas. It's no surprise then that images of the Milky Way resonate. 
+The spectacular Milky Way has inspired stories, songs and space exploration for ages. But today's stargazer might find it challenging to even see it in the night sky. Light pollution means that the Milky Way is [shrouded from view](http://www.theguardian.com/science/2016/jun/10/milky-way-no-longer-visible-to-one-third-of-humanity-light-pollution "Milky Way no longer visible to one third of humanity, light pollution atlas shows") for many people, especially those living in densely populated areas. It's no surprise then that images of the Milky Way resonate.
 
 My brother created Astrordinary in 2015 to photograph and share high-resolution panoramas and VR photospheres of the galaxy and near space as seen from Western Australia. Virtual reality was going mainstream, which enabled him to give people a virtual view of the Milky Way. Many people had never seen anything like it and shared them, as did tourism organisations, photographers and VR apps. The community of ‘earthlings’ soon grew organically, concentrated on a variety of social media.
 
@@ -36,7 +36,7 @@ We were based in different ends of the country, so we made an extra effort to ma
 The _diverge-converge-diverge-converge_ design process and especially the [Revamped Double Diamond](http://medium.com/digital-experience-design/how-to-apply-a-design-thinking-hcd-ux-or-any-creative-process-from-scratch-b8786efbf812#.d5zw1tfqi) framework were highly applicable to this project, helping to identify the right thing to design and then designing it right.
 
 ### User empathy, VR style
-I followed every single post and looked at Astrordinary images using a VR headset. Unfortunately for me, I belong to the third of humanity who can't see the Milky Way in person. But fortunately for this project, I got to experience how VR images of the Milky Way solve my problem. 
+I followed every single post and looked at Astrordinary images using a VR headset. Unfortunately for me, I belong to the third of humanity who can't see the Milky Way in person. But fortunately for this project, I got to experience how VR images of the Milky Way solve my problem.
 
 One other thing I wanted to do was tag along and live witness an astrophotography shoot. But my one and only chance on a short visit to Perth didn’t pan out; the night was cloudy and unsuitable for night photography. Oh well.
 
@@ -44,7 +44,7 @@ One other thing I wanted to do was tag along and live witness an astrophotograph
 
 {% include image.html caption="Making sense in the discovery phase (lots more like these)" url="/assets/discovery.jpg" alt="Discovery findings" %}
 
-I began researching the user and his/her needs. I explored what the user wanted, investigating areas like emotional states when viewing images and motivators for why people purchased images, sent a message, shared a post and what they did with their purchase. I also looked into how other photographers dealt with strong visual subject matter. 
+I began researching the user and his/her needs. I explored what the user wanted, investigating areas like emotional states when viewing images and motivators for why people purchased images, sent a message, shared a post and what they did with their purchase. I also looked into how other photographers dealt with strong visual subject matter.
 
 ### Structuring findings into themes
 
@@ -74,7 +74,7 @@ Many users felt the images captured a 'carpe diem' type of ethos to get out ther
 
 Armed with this discovery, I painted a picture of the user with four personas.
 
-![Personas](/assets/AstroPersonas.jpg)
+{% include image.html url="/assets/AstroPersonas.jpg" alt="Personas" %}
 
 The Active Learner persona was the main focus in the design. This persona was the most engaged of the four and made up the largest group. On hindsight, I see that the personas could benefit from additional insight and points of view such as making the persona tell its own story through speech bubbles.
 
@@ -82,12 +82,12 @@ The Active Learner persona was the main focus in the design. This persona was th
 
 **Create a way that allows a person to experience the night sky and astrophotography.**
 
-Reframing the problem this way enabled us to think critically about the initial goals. It expanded possibilities and set the stage for a delightful and cohesive user experience.   
+Reframing the problem this way enabled us to think critically about the initial goals. It expanded possibilities and set the stage for a delightful and cohesive user experience.
 
 ## SKETCHES AND PROTOTYPES
 
 ### Creating meaning for the user
-The personas played a crucial role in our decisions designing an experience for them. We wanted to give the user what they wanted in the shortest possible time in a way that made the most sense to them. ([No point being different](http://medium.com/@yarcom/in-defense-of-homogeneous-design-b27f79f4bb87#.tbe7ipavg) purely for the sake of being unique.) 
+The personas played a crucial role in our decisions designing an experience for them. We wanted to give the user what they wanted in the shortest possible time in a way that made the most sense to them. ([No point being different](http://medium.com/@yarcom/in-defense-of-homogeneous-design-b27f79f4bb87#.tbe7ipavg) purely for the sake of being unique.)
 
 We also used the personas to guide us in auditing content and developing new ones. For example, user research showed that a major group of users were keen to learn more about techniques. We discussed win-win solutions that gave users what they want in a way that made business sense. This ultimately resulted in freely sharing information about equipment and developing workshops that interested users could sign up to.
 
@@ -103,7 +103,7 @@ Sketching major parts of the site with pencil and paper allowed me to quickly it
 
 ### Wireframes and mock ups on Sketch
 
-I used Sketch to create higher fidelity mock ups, testing if ideas would work practically like juxtaposing text against the star-speckled images. 
+I used Sketch to create higher fidelity mock ups, testing if ideas would work practically like juxtaposing text against the star-speckled images.
 
 {% include image.html caption="Wireframes to further explore layouts for the gallery" url="/assets/galleryWireframeSketch.jpg" alt="Wireframes of the gallery" %}
 
@@ -119,18 +119,18 @@ I quickly created clickable prototypes in InVision to start testing on users. Th
 ### Online shop: Conforming to conceptual models
 Research showed that only after people have followed the photographer and looked at images for a while would they even consider purchasing a print. This is opposed to the behavior of browsing or window shopping which sees a person enter with an intent to compare and purchase. We designed for this behavior by locating the purchase process flow in a zoomed-in image (below), meaning that a user had specifically intended to find out more about an image.
 
-![Beginning the purchase process](/assets/zoomedGalleryPurchase.jpg)
+{% include image.html url="/assets/zoomedGalleryPurchase.jpg" alt="Beginning the purchase process" %}
 
-Despite this behavior, preliminary testing showed that at a glance, users didn't realise they could purchase things on this site at all. It lacked indicators. The navigation and design didn't fit the mental model of an online store. 
+Despite this behavior, preliminary testing showed that at a glance, users didn't realise they could purchase things on this site at all. It lacked indicators. The navigation and design didn't fit the mental model of an online store.
 
 I fixed this by adding a shop page and altered the navigation to make 'Shop’ clearly signify the ability to purchase something. On hindsight, this design change felt obvious and further testing showed that users found the new navigation clearer about the functions of the site.
 
-![Shop page on mobile](/assets/shopMobile.jpg)
+{% include image.html url="/assets/shopMobile.jpg" alt="Shop page on mobile" %}
 
 ### Increasing gallery visibility and constraints
-For the vast majority of users, the main thing they want to do is to look at images. I met this “80% use case” by getting straight to business with the gallery as the homepage. 
+For the vast majority of users, the main thing they want to do is to look at images. I met this “80% use case” by getting straight to business with the gallery as the homepage.
 
-User testing however, uncovered a design flaw. I watched how users hesitated or tried clicking into other pages when they landed on the site, unclear that there was a treasure trove of images below if they simply scrolled down. 
+User testing however, uncovered a design flaw. I watched how users hesitated or tried clicking into other pages when they landed on the site, unclear that there was a treasure trove of images below if they simply scrolled down.
 
 I solved this problem by simply increasing visibility of the gallery and constraints on the user flow, adding a downward arrow to lead users down the path.
 
@@ -138,6 +138,6 @@ The changes to the gallery and shop felt obvious and improved the flow significa
 
 ## DESIGN
 
-![Laptop](/assets/MacBookShowcase.jpg)
+{% include image.html url="/assets/MacBookShowcase.jpg" alt="Laptop" %}
 
 {% include link-button.html text="See mobile prototype" url="https://invis.io/HYAK85FBW" newTab=true %}
