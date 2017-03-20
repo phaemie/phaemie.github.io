@@ -1,4 +1,14 @@
+{% if include.caption %}
 <table class="image">
     <caption align="bottom">{{ include.caption }}</caption>
-    <tr><td><img src="{{ include.url }}" alt="{{ include.alt }}"/></td></tr>
+    <tr><td>
+        <a href="{{ include.url }}" data-caption="{{ include.caption }}">
+            <img src="{{ include.url }}" alt="{{ include.alt }}"/>
+        </a>
+    </td></tr>
 </table>
+{% else %}
+<a href="{{ include.url }}">
+    <img src="{{ include.url }}" alt="{{ include.alt }}"/>
+</a>
+{% endif %}

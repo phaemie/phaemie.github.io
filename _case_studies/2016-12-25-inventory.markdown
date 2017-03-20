@@ -21,16 +21,16 @@ Tools: Sketch, Axure, pencil+paper
 
 Techniques: User interviews, User stories, Empathy mapping and personas, Affinity diagram, Feature prioritisation, Sketching, User flows
 
-## DISCOVER 
+## DISCOVER
 
-The goal of the challenge was to create a faster, more intuitive way for hospitality business owners to do inventory, so that they are more accurate, waste less and have more time to spend on other tasks. 
+The goal of the challenge was to create a faster, more intuitive way for hospitality business owners to do inventory, so that they are more accurate, waste less and have more time to spend on other tasks.
 
-I set out to understand how owners and employees currently do their inventory through a combination of techniques: user interviews, user scenarios and observation. 
+I set out to understand how owners and employees currently do their inventory through a combination of techniques: user interviews, user scenarios and observation.
 
 ### Key findings
 * Products are measured in different units depending on what it is. Some in pieces, some in weight, some in boxes.
 * Ordering stock to build to minimum levels involves guesswork and eyeballing.
-* Counting every single product in every box is tedious and prone to human error.  
+* Counting every single product in every box is tedious and prone to human error.
 
 From the key findings, I was able to empathise with the user through the following techniques.
 
@@ -47,7 +47,7 @@ _"As a restaurant employee in charge ensuring minimum stock levels of many diffe
 
 Empathy mapping what the user sees, hears, does and thinks, as well as their pain points and goals was useful in constructing their worldview. It helped in creating user personas, focusing on motivations, pain points, goals and needs.
 
-![User personas](/assets/PersonasInventory.jpg "Personas")
+{% include image.html url="/assets/PersonasInventory.jpg" alt="User personas" %}
 
 We've got a good framework for stepping into the minds and shoes of these people, so time to start figuring out what is useful to them.
 
@@ -57,16 +57,16 @@ We've got a good framework for stepping into the minds and shoes of these people
 
 Using the personas and user stories as a guide, I brainstormed what tasks each user might do during inventory taking. Analysing tasks is useful for understand what an effective tool might look like.
 
-![Affinity diagram of a useful inventory system](/assets/affinityDiagramInventory.jpg "Affinity diagram")
+{% include image.html url="/assets/affinityDiagramInventory.jpg" alt="Affinity diagram of a useful inventory system" %}
 
 The affinity diagram helped me zoom in on features of the inventory system. To design a whole inventory system would require several sprints, so I first focused on the main function of a stock take, to count and update stock levels. In addition, the goal of the challenge was make this process easier and faster. Together these goals helped me prioritise and define the scope of the sprint.
 
-I prioritised features by sorting them into must have, should have, could have and won't have piles. When doing inventory, people are often on their feet. For that reason, a mobile tool best lends itself to performing quick interactions while on the move. 
+I prioritised features by sorting them into must have, should have, could have and won't have piles. When doing inventory, people are often on their feet. For that reason, a mobile tool best lends itself to performing quick interactions while on the move.
 
 ## DESIGN SPRINT
-I began sketching user flows on paper to explore ideas and how must have features might look on the screen. When I had a better concept of how the flow would work, I created low-fidelity wireframes in Axure and then static mock ups in Sketch. 
+I began sketching user flows on paper to explore ideas and how must have features might look on the screen. When I had a better concept of how the flow would work, I created low-fidelity wireframes in Axure and then static mock ups in Sketch.
 
-![List view of all products for inventory](/assets/Inventory_Allprod.jpg "List view of all products on inventory list")
+{% include image.html url="/assets/Inventory_Allprod.jpg" alt="List view of all products for inventory" %}
 
 ### All items in the stock take
 
@@ -77,7 +77,7 @@ I began sketching user flows on paper to explore ideas and how must have feature
 * Extensions: Quick order (future sprint), quick add new item
 * User can select to view counts of packed units in whole and broken units. A box of 24 bottles and 4 loose bottles from the opened box can be recorded as 28 bottles or 1 box and 4 bottles.
 
-![Add a new item, purchased into the store](/assets/Inventory_AddPurchasedProd.jpg "Add new purchased item to inventory")
+{% include image.html url="/assets/Inventory_AddPurchasedProd.jpg" alt="Add new purchased item to inventory" %}
 
 ### Add a new item
 
@@ -87,7 +87,7 @@ I began sketching user flows on paper to explore ideas and how must have feature
 * Item can be used to prepare food and inventory debited against
 * User can select different units and unit names (trays, boxes) to enable counting in whole and broken units
 
-![Counting inventory in different units](/assets/Inventory_countingDifferentUnits.jpg "Inventory counting and recording")
+{% include image.html url="/assets/Inventory_countingDifferentUnits.jpg" alt="Counting inventory in different units" %}
 
 ### Fast and accurate counting
 
