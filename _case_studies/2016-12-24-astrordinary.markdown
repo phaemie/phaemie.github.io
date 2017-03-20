@@ -107,6 +107,8 @@ I used Sketch to create higher fidelity mock ups, testing if ideas would work pr
 
 {% include image.html caption="Wireframes to further explore layouts for the gallery" url="/assets/galleryWireframeSketch.jpg" alt="Wireframes of the gallery" %}
 
+![Wireframes](/assets/AstroWireframes.jpg)
+
 I made a conscious decision to create wireframes in Sketch itself rather than in other programs like Axure or Balsamiq to critically think about elements on the page and to streamline the workflow rather than using different software for different purposes. I was also able to view changes and evolution of the design all in one document. (Moving forward though, I am keen to explore wireframing kits like the Wixel plugin).
 
 ## TESTING

@@ -51,6 +51,7 @@ These insights showed we had to focus on user needs relating to:
 Using task analysis, we identified what a user needed at each step of the flow and were ready to begin sketching. 
 
 ![homepage wireframe](/assets/vividHomepage.jpg)
+![annotated wireframes](/assets/vwWireframes.jpg)
 
 ## DESIGN
 
