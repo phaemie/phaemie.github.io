@@ -28,7 +28,7 @@ linkedin_username: phaemieng
 # Build settings
 markdown: kramdown
 theme: minima
-gems:
+plugins:
   - webrick
   - jekyll-svg-plugin
   - jekyll-email-protect
