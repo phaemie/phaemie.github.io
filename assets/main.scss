@@ -313,14 +313,6 @@ ul {
     p {
         font-size: 40px;
         font-weight: bold;
-
-        .js-enabled & {
-            transition: 1s transform ease-in-out;
-            transform: translateX(2000px);
-        }
-        .js-enabled.page-loaded & {
-            transform: translateX(0);
-        }
     }
 }
 
@@ -343,7 +335,7 @@ ul {
 
             .js-enabled & {
                 transform: translateY(1000px);
-                transition: 0s transform ease-in-out;
+                transition: 0s transform ease-out;
             }
             .js-enabled.page-loaded & {
                 transform: translateY(0);
