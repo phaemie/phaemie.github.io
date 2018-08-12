@@ -6,7 +6,6 @@ layout: base
   <article class="post">
     <header class="post-header">
       <div class="wrapper">
-        <span class="post-meta">Case studies</span>
         <h1 class="post-title">{{ page.title | escape }}</h1>
         <span class="post-subtitle">{{ page.subtitle | markdownify }}</span>
       </div>
@@ -16,15 +15,30 @@ layout: base
       <div class="post-content">
         {{ content }}
       </div>
-      {% assign curr = false %}
-      {% for study in site.case_studies %}
-        {% if curr %}{% assign curr = false %}
-          <div class="next-post">
-            <a href="{{study.url | relative_url }}">Next case study ({{ study.title | escape }}) <span class="arrow">➞</span></a>
-          </div>
+      <div class="next-prev-nav">
+        {% comment %} get prev and next indexes {% endcomment %}
+        {% assign prev_i = -1 %}
+        {% assign next_i = -1 %}
+        {% for study in site.case_studies %}
+          {% if study.title == page.title %}
+            {% unless forloop.first %}
+              {% assign prev_i = forloop.index0 | minus: 1 %}
+            {% endunless %}
+            {% unless forloop.last %}
+              {% assign next_i = forloop.index0 | plus: 1 %}
+            {% endunless %}
+          {% endif %}
+        {% endfor %}
+
+        {% if prev_i != -1 %}
+          {% assign prev = site.case_studies[prev_i] %}
+          <a class="prev-post" href="{{prev.url | relative_url }}">{{ prev.title | escape }}</a>
         {% endif %}
-        {% if study.title == page.title %}{% assign curr = true %}{% endif %}
-      {% endfor %}
+        {% if next_i != -1 %}
+          {% assign next = site.case_studies[next_i] %}
+          <a class="next-post" href="{{next.url | relative_url }}">{{ next.title | escape }}</span></a>
+        {% endif %}
+      </div>
     </div>
   </article>
 </main>

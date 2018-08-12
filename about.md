@@ -1,8 +1,13 @@
 ---
 layout: page
+title: About
+hide_title: true
 permalink: /about/
-footer: true
+order: 2
 ---
+
+
+{% include image.html url="/assets/avatar.png" alt="A picture of the author, Phaemie Ng" height="270" width="234" %}
 
 Hi there, I’m Phaemie. I’m a UX designer based in Sydney, Australia.
 

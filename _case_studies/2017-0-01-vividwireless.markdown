@@ -3,7 +3,6 @@ title:  "vividwireless (2011)"
 subtitle: |
   Helping people make informed decisions about their Internet Service Provider.
 date:   2016-12-24 10:11:39 +1100
-categories: jekyll update
 project_type: "Website Redesign"
 image: "vwHomepageWireframe.jpg"
 image_alt: "Wireframe of homepage"

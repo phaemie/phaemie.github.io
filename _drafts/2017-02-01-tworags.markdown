@@ -10,6 +10,7 @@ project_type: "Human-centered design challenge"
 image: "TRimage.jpg"
 image_alt: "reusable cloth pads"
 excerpt: "A challenge to design a solution to a real world problem: the difficulty many girls face in managing periods in the developing world."
+output: false
 ---
 
 ## THE CHALLENGE

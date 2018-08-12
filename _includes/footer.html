@@ -1,40 +1,46 @@
 <footer class="site-footer">
   <section class="wrapper">
-    <h1 class="footer-heading">About me</h1>
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        {% comment %}<div class="hexagon"><div class="hexagon-in1"><div class="hexagon-in2">{% endcomment %}
-          <img src="{{ "assets/avatar.png" | relative_url }}" alt="A picture of the author, Phaemie Ng" height="270" width="234" />
-        {% comment %}</div></div></div>{% endcomment %}
+    {% comment %}<h1 class="footer-heading">About me</h1>{% endcomment %}
+    {% assign foundFooterPage = false %}
+    {% for page in site.pages %}
+      {% if page.footer %}
+        {% assign foundFooterPage = true %}
+      {% endif %}
+    {% endfor %}
+    {% if foundFooterPage %}
+      <div class="footer-blob">
+        {% for page in site.pages %}
+          {% if page.footer %}
+            {% assign foundFooterPage = true %}
+            {{ page.content | markdownify }}
+          {% endif %}
+        {% endfor %}
       </div>
-      <div class="footer-col footer-col-2">
-        <div class="footer-blob">
-          {% for footer_page in site.pages %}
-            {% if footer_page.footer %}
-              {{ footer_page.content | markdownify }}
-            {% endif %}
-          {% endfor %}
-        </div>
-        <ul class="contact-list">
-          {% if site.email %}
-            {% capture email_icon %}{% include icon-email.svg %}{% endcapture %}
-            <li>
-              {% include contact_icon.html className="email" url="" accessible_text="Email me" icon=email_icon %}
-              <script>document.querySelector('.contact-list .email').href = ["mai", "lto:", "{{ site.email | encode_email }}"].join("")</script>
-            </li>
-          {% endif %}
-          {% if site.linkedin_username %}
-            {% capture linkedin_url %}https://www.linkedin.com/in/{{ site.linkedin_username }}/{% endcapture %}
-            {% capture linkedin_icon %}{% include icon-linkedin.svg %}{% endcapture %}
-            <li>{% include contact_icon.html className="linkedin" url=linkedin_url accessible_text="LinkedIn" icon=linkedin_icon %}</li>
-          {% endif %}
-          {% if site.twitter_username %}
-            {% capture twitter_url %}https://twitter.com/{{ site.twitter_username }}/{% endcapture %}
-            {% capture twitter_icon %}{% include icon-twitter.svg %}{% endcapture %}
-            <li>{% include contact_icon.html className="twitter" url=twitter_url accessible_text="Twitter" icon=twitter_icon %}</li>
-          {% endif %}
-        </ul>
-      </div>
-    </div>
+    {% endif %}
+    <ul class="contact-list">
+      {% if site.email %}
+        {% capture email_icon %}{% include icon-email.svg %}{% endcapture %}
+        <li>
+          <a class="email"></a>
+          <script>(function(e, el) {
+            el.href = ["mai", "lto:", e].join("");
+            el.innerText = decodeURI(e);
+          })(
+            "{{ site.email | encode_email }}",
+            document.querySelector('.contact-list .email')
+          )</script>
+        </li>
+      {% endif %}
+      {% if site.linkedin_username %}
+        <li>
+          <a class="linkedin" href="https://www.linkedin.com/in/{{ site.linkedin_username }}/">LinkedIn</a>
+        </li>
+      {% endif %}
+      {% if site.twitter_username %}
+      <li>
+        <a class="twitter" href="https://twitter.com/{{ site.twitter_username }}/">Twitter</a>
+      </li>
+      {% endif %}
+    </ul>
   </section>
 </footer>

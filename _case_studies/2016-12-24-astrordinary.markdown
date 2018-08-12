@@ -5,10 +5,9 @@ subtitle: |
 
   Through stunning astrophotography, I helped give people a chance to do so.
 date:   2016-12-24 10:11:39 +1100
-categories: jekyll update
 project_type: "Responsive site"
 image: "astrordinary_hero.jpg"
-image_alt: "Milky Way in the night  sky"
+image_alt: "Milky Way in the night sky"
 excerpt: "A responsive site that enables easy viewing of high resolution images of the Milky Way."
 ---
 

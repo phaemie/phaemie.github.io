@@ -14,9 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: "Phaemie Ng"
-logo: "logo.png"
+#logo: "logo.png" # using raw title text
 repository: "phaemie/phaemie.github.io"
-email: contact@phaemie.com
+email: phaemie@gmail.com
 description: The personal site of Phaemie Ng
 baseurl: "" # the subpath of your site, e.g. /blog
 prod_host: phaemie.com
@@ -38,7 +38,7 @@ exclude:
   - .gitignore
 collections:
   case_studies:
-    output: true
+    output: false
     permalink: /case-study/:title
 defaults:
   -
