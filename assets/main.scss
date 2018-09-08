@@ -7,18 +7,18 @@
 $fallback-fonts: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-family: Karla, $fallback-fonts;
 $heading-font-family: $base-font-family;
-$base-font-size: 20px;
+$base-font-size: 19px;
 $large-font-size: 28px;
 $medium-font-size: 24px;
 $tiny-font-size: 16px;
 $base-font-weight: 400;
 $base-line-height: 1.5;
-$site-title-font-size: 24px;
-$site-nav-font-size: 22px;
+$site-title-font-size: 22px;
+$site-nav-font-size: 20px;
 
-$spacing-unit:     30px;
+$spacing-unit: 30px;
 
-$one: #000000;
+$one: #333333;
 $two: #2F4550;
 $three: #FC4A1A;
 $four: #707070;
@@ -41,15 +41,14 @@ $link-active-color: $five;
 $gutter-width:     20px;
 $column-width:     85px;
 
-$on-palm: palm; // 5 columns + 6 gutters
+$on-palm: palm;
 $palm-width-min: 545px; // no page should require more space than this
 
 $on-laptop: laptop;
-$laptop-width-min: 755px; // 7 columns + 8 gutters
+$laptop-width-min: 755px;
 
 $on-desktop: desktop;
-$desktop-width-min:       1070px; // 10 columns + 11 gutters
-//$desktop-width-min:       1280px; // 12 columns + 13 gutters
+$desktop-width-min:       985px;
 
 $palm-width-max: 545px;
 
@@ -195,7 +194,7 @@ ul {
 
 .site-footer {
     .contact-list {
-        margin: (4 * $spacing-unit) 0;
+        margin: (4 * $spacing-unit) 0 100px;
         display: flex;
         flex-direction: column;
         
@@ -248,17 +247,26 @@ ul {
 }
 .next-prev-nav {
     margin-top: 3 * $spacing-unit;
-    display: flex;
-    justify-content: space-between;
     width: 100%;
     text-transform: uppercase;
     font-size: $tiny-font-size;
+
+    @include minWidth($on-laptop) {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 .next-post:first-child {
     width: 100%;
     text-align: right;
 }
 .prev-post, .next-post {
+    white-space: nowrap;
+    letter-spacing: 1px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+
     &, &:hover, &:visited {
         text-decoration: none;
         vertical-align: middle;
@@ -266,6 +274,12 @@ ul {
     }
     &:active {
         color: $text-color;
+    }
+
+    > span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        flex-shrink: 1;
     }
 }
 .prev-post::before,
@@ -280,6 +294,7 @@ ul {
     transition: 0.2s transform;
 }
 .prev-post{
+    padding-left: 5px;
     &::before {
         margin-right: $gutter-width;
         transform: rotate(45deg);
@@ -289,6 +304,10 @@ ul {
     }
 }
 .next-post {
+    text-align: right;
+    padding-right: 5px;
+    justify-content: flex-end;
+
     &::after {
         margin-left: $gutter-width;
         transform: rotate(225deg);
@@ -311,7 +330,7 @@ ul {
     p:empty { display: none;}
 
     p {
-        font-size: 40px;
+        font-size: 38px;
         font-weight: bold;
     }
 }
@@ -375,7 +394,7 @@ ul {
                 }
 
                 .post-title {
-                    font-size: $large-font-size;
+                    font-size: $medium-font-size;
                 }
 
                 .post-meta {
@@ -390,7 +409,7 @@ ul {
                         color: $link-hover-color;
                     }
                     .post-image {
-                        bottom: 5px;
+                        bottom: 10px;
                     }
                 }
                 //background: transparent linear-gradient(to bottom, rgba(255,255,255,0) 0, $bg-color ($base-font-size * 2));
@@ -402,20 +421,19 @@ ul {
 
 .post-header {
     .post-title {
-        font-size: 40px;
+        font-size: 38px;
         font-weight: bold;
     }
 
     .post-subtitle {
-        font-size: $base-font-size + 2;
+        font-size: $base-font-size + 3;
         letter-spacing: 0.5px;
-        color: $subtitle-text-color;
+        color: $subtle-text-color;
+        font-weight: bold;
     }
 }
 
 .post-content {
-    letter-spacing: 1px;
-
     a {
         color: $link-color;
     }
@@ -430,7 +448,7 @@ ul {
     }
 
     p {
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
 
     ul {

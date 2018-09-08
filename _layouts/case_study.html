@@ -32,11 +32,11 @@ layout: base
 
         {% if prev_i != -1 %}
           {% assign prev = site.case_studies[prev_i] %}
-          <a class="prev-post" href="{{prev.url | relative_url }}">{{ prev.title | escape }}</a>
+          <a class="prev-post" href="{{prev.url | relative_url }}"><span>{{ prev.title | escape }}</span></a>
         {% endif %}
         {% if next_i != -1 %}
           {% assign next = site.case_studies[next_i] %}
-          <a class="next-post" href="{{next.url | relative_url }}">{{ next.title | escape }}</span></a>
+          <a class="next-post" href="{{next.url | relative_url }}"><span>{{ next.title | escape }}</span></a>
         {% endif %}
       </div>
     </div>
