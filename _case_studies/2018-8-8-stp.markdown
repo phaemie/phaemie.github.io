@@ -1,0 +1,68 @@
+---
+title:  "Single Touch Payroll"
+subtitle: Using design sprints to provide peace of mind for a business’s compliance needs
+
+date:   2018-09-08 10:11:39 +1100
+categories: jekyll update
+project_type: ""
+image: ""
+image_alt: ""
+excerpt: ""
+---
+
+In 2017-2018 we worked on designing the Single Touch Payroll solution to enable Australian businesses to report their employee contributions to the ATO following every pay run. For employers, this was a compliance hurdle they have to jump over, involving payroll software upgrades and adopting new payroll processes. For us it was an opportunity to turn a user’s compliance need into a simple, delightful process that gave them peace of mind they weren’t running foul of the ATO.
+
+## The Problem
+
+There were a number of technical as well as user experience challenges we faced. Our roadmap also had to closely follow the ATO's constantly-evolving release schedule in order to track against their mandated timeline. Therefore it was imperative that the MVP for each staged roll-out phase was understood and our solution met not only the user's needs, but the ATO's legislative requirements.
+
+Being a mature product, our core Payroll product is a desktop solution which requires version releases, meaning that the client base uses a number of legacy versions that require lengthy upgrade procedures. Therefore, it was decided that the architectural solution was to build STP as part of the Attache Online cloud platform which would enable regular deployments in line with the ATO's development roadmap. This presented a challenging UX problem as it was the first piece of payroll functionality that we had to build outside of the core Payroll system which would potentially introduce a disjointed user experience in the payroll processing workflow.
+
+
+## The Approach
+
+### A Design Sprint
+
+After reading Design Sprint by Jake Knapp, I introduced the format to the team to design our solution. A design sprint is a 5 day process for solving problems and testing and validating new ideas quickly. The idea with the Design Sprint is to build and test a prototype in just a week, although we shortened it to 3 days. We assembled a small cross-functional team from across the company and using the activities, rapidly progressed from a problem statement to a tested prototype. This allowed us to fast-forward quickly to combine promising ideas and see how users reacted to them without incurring the expense of building the real product.
+
+### Understanding the Problem
+
+The team spent the first day understanding the problem with a number of presentations from the product manager, architect, and also our Finance team who would eventually be our first STP client as part of their payroll job function. We then mapped the problem and set the goal for the sprint and the scope of what we were trying to achieve in the short timeframe.
+
+### Designing the Solution
+
+The team spent the next day sketching and discussing various ideas on how the workflow, user journey and screen functionality could look. As the team comprised of product managers, product owners, designers, engineers, testers, support staff and channel managers, it was a very collaborative experience and generated a lot of varied ideas and discussion points from different perspectives.
+
+I had everyone sketch their ideas on how to solve a given problem. All the sketches were stuck on the wall and the critiqued before a round of sticky dot voting for promising ideas, and then more rounds of sketching were held to refine the ideas further. At the end of the day the product manager ('The Decider') selected the solution that best fit the product strategy. We would prototype and test this solution.
+
+![After a sketching session](/assets/sketches.jpg)
+
+![A storyboard of the user flow](/assets/storyboard.jpg)
+
+### Prototyping
+
+![Rapid Prototyping](/assets/teamprototyping.jpg)
+
+Team members spent the next day rapid prototyping the solution using Axure. A hi-fidelity prototype was created with a simple workflow showing pay runs that would be synced up from the desktop payroll system and marked with a status to show if the data was ready to send, had been accepted by the ATO, or rejected due to issues with the data. The next screen showed the pay run details, and would enable the payroll officer to review the details of all employee contributions by clicking on each employee’s name, as well as the overall batch totals as we discovered that payroll officers would wish to review the data in detail before submitting to the ATO, especially as it had been synced from a different system.
+
+### Testing and Validating
+
+Whilst some members of the team were focused on producing the prototypes, other members focused on setting up user test scripts and a room for the testing, as well as a room where other team members could observe the user tests without overwhelming the test participant.
+
+Everyone's observations and feedback was captured, before discussing and documenting our findings and agreeing on further changes that would need to be made and tested outside of the Design Sprint time box in preparation for development.
+
+![User Testing](/assets/usertesting.jpg)
+
+## The Outcome
+
+![](/assets/stp.png)
+
+![](/assets/calculations.png)
+
+![](/assets/sent.png)
+
+It’s been some months since our STP solution was released. We have been monitoring how it is being used and where enhancements are required. We have visited and interviewed customers to collect their feedback, and whereas the overall solution has been well received, there are a number of areas that need further improvement, such as error handling, as well as further ideas on how we can streamline the overall process by deep linking directly from the desktop software as the user processes their pay. 
+
+![Analytics](/assets/stpanalytics.png)
+
+In general, the design process we used was a very collaborative and successful exercise that involved people that aren't usually involved in the feature design process. Process-wise, parts of the design sprint have stuck in our day-to-day - we can't always use a Design Sprint as it's difficult to lock people in a room for 3-5 days, but we use many of the key principles in our daily work.
