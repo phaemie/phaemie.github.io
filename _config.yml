@@ -38,7 +38,7 @@ exclude:
   - .gitignore
 collections:
   case_studies:
-    output: false
+    output: true
     permalink: /case-study/:title
 defaults:
   -
