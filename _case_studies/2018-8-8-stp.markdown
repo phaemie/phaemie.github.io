@@ -5,7 +5,7 @@ subtitle: Using design sprints to provide peace of mind for a business’s compl
 date:   2018-09-08 10:11:39 +1100
 categories: jekyll update
 project_type: ""
-image: ""
+image: "stpmain.png"
 image_alt: ""
 excerpt: ""
 ---
@@ -62,7 +62,5 @@ Everyone's observations and feedback was captured, before discussing and documen
 ![](/assets/sent.png)
 
 It’s been some months since our STP solution was released. We have been monitoring how it is being used and where enhancements are required. We have visited and interviewed customers to collect their feedback, and whereas the overall solution has been well received, there are a number of areas that need further improvement, such as error handling, as well as further ideas on how we can streamline the overall process by deep linking directly from the desktop software as the user processes their pay. 
-
-![Analytics](/assets/stpanalytics.png)
 
 In general, the design process we used was a very collaborative and successful exercise that involved people that aren't usually involved in the feature design process. Process-wise, parts of the design sprint have stuck in our day-to-day - we can't always use a Design Sprint as it's difficult to lock people in a room for 3-5 days, but we use many of the key principles in our daily work.
