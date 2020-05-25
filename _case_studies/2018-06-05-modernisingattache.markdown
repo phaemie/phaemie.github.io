@@ -3,7 +3,7 @@ title:  "New Navigation and Dashboards"
 subtitle: Modernising Attache Payroll and Accounts to unlock value for users 
 date: 2018-09-08 10:11:39 +1100
 project_type: ""
-image: ""
+image: "dashboardlanding.jpg"
 image_alt: ""
 excerpt: ""
 ---
