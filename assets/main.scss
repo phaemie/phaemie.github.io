@@ -7,11 +7,12 @@
 $fallback-fonts: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-family: Karla, $fallback-fonts;
 $heading-font-family: $base-font-family;
-$base-font-size: 19px;
+$base-font-size: 18px;
 $large-font-size: 28px;
 $medium-font-size: 24px;
 $tiny-font-size: 16px;
 $base-font-weight: 400;
+$post-content-font-weight: 400;
 $base-line-height: 1.5;
 $site-title-font-size: 22px;
 $site-nav-font-size: 20px;
@@ -19,12 +20,12 @@ $site-nav-font-size: 20px;
 $spacing-unit: 30px;
 
 $one: #333333;
-$two: #2F4550;
+$two: #525B67;
 $three: #FC4A1A;
 $four: #707070;
-$five: #056571;
+$five: #3D5A80;
 $six: white;
-$seven: #414141;
+$seven: #777777;
 
 $text-color: $one;
 $subtitle-text-color: $seven;
@@ -48,7 +49,7 @@ $on-laptop: laptop;
 $laptop-width-min: 755px;
 
 $on-desktop: desktop;
-$desktop-width-min:       985px;
+$desktop-width-min:       885px;
 
 $palm-width-max: 545px;
 
@@ -244,6 +245,7 @@ ul {
 }
 .post-content {
     margin: $spacing-unit auto;
+    font-weight: $post-content-font-weight;
 }
 .next-prev-nav {
     margin-top: 3 * $spacing-unit;
@@ -330,7 +332,7 @@ ul {
     p:empty { display: none;}
 
     p {
-        font-size: 38px;
+        font-size: 34px;
         font-weight: bold;
     }
 }
@@ -421,7 +423,7 @@ ul {
 
 .post-header {
     .post-title {
-        font-size: 38px;
+        font-size: 34px;
         font-weight: bold;
     }
 
