@@ -41,8 +41,6 @@ I had everyone sketch their ideas on how to solve a given problem. All the sketc
 
 ### Prototyping
 
-![Rapid Prototyping](/assets/teamprototyping.jpg)
-
 Team members spent the next day rapid prototyping the solution using Axure. A hi-fidelity prototype was created with a simple workflow showing pay runs that would be synced up from the desktop payroll system and marked with a status to show if the data was ready to send, had been accepted by the ATO, or rejected due to issues with the data. The next screen showed the pay run details, and would enable the payroll officer to review the details of all employee contributions by clicking on each employee’s name, as well as the overall batch totals as we discovered that payroll officers would wish to review the data in detail before submitting to the ATO, especially as it had been synced from a different system.
 
 ### Testing and Validating
@@ -50,8 +48,6 @@ Team members spent the next day rapid prototyping the solution using Axure. A hi
 Whilst some members of the team were focused on producing the prototypes, other members focused on setting up user test scripts and a room for the testing, as well as a room where other team members could observe the user tests without overwhelming the test participant.
 
 Everyone's observations and feedback was captured, before discussing and documenting our findings and agreeing on further changes that would need to be made and tested outside of the Design Sprint time box in preparation for development.
-
-![User Testing](/assets/usertesting.jpg)
 
 ## The Outcome
 
