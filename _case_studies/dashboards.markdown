@@ -1,9 +1,9 @@
 ---
 title:  "Navigation and Dashboards"
-subtitle: Modernising Attache Payroll and Accounts to unlock value for users 
+subtitle: Displaying information visually for users 
 date: 2018-09-08 10:11:39 +1100
 project_type: ""
-image: "dashboardlanding.jpg"
+image: "newdashboard.png"
 image_alt: ""
 excerpt: ""
 ---
@@ -22,32 +22,19 @@ Users selected one of three legacy styles - tabs, dropdown menus and a tree-styl
 
 #### The Landing Page
 
-After logging in, users immediately saw this page (the help centre) and many had begun to ignore it. 
-
-![](/assets/landingpagebeforeredesign.png)
-
-We agreed there was a huge opportunity to use the landing page for people to run their businesses more effectively.
+After logging in, users immediately saw the help centre, and as a team we agreed there was a huge opportunity to use the landing page for people to run their businesses more effectively.
 
 ### Iterating from wireframes to interactive prototypes
 
-We started out in the UX problem space by interviewing users and stakeholders about their needs and pain points, before producing wireframes of possible landing pages and navigation styles. Patterns from user interviews soon emerged, such as users found it difficult get a birds-eye view of their business from the software. These findings led us to focus the landing page on dashboards with the aim of helping users do their jobs more efficiently and accurately.
+We started out in the UX problem space by interviewing users and stakeholders about their needs, pain points and what info they needed to run their businesses effectively. We quickly began producing wireframes of possible landing pages and navigation styles. Fairly quickly, patterns from user interviews emerged, such as users finding it difficult get a birds-eye view of their business from the software. These findings led us to focus the landing page on dashboards with the aim of helping users do their jobs more efficiently and accurately.
 
 Our wireframes went through many rounds of iteration, incorporating feedback and input from users, stakeholders and partners. During this time we also worked with Engineering to ensure the designs were feasible from a technical perspective. 
 
 We turned our wireframes into mock ups of the UI design, then into interactive prototypes for rounds of usability testing. 
 
-![](/assets/dashboardmock1.png)
+I built the interactive prototypes in Axure so that we could validate design concepts before even writing a single line of code, reducing waste while gaining confidence we were building the right thing. We asked users questions like “what deliveries do you have coming in today?” to see if they could easily find the information on the dashboard or navigation.
 
-![](/assets/dashboardmock2.png)
-
-![](/assets/dashboardempty.png)
-
-![](/assets/dashboardloading.png)
-
-
-I built the interactive prototypes in Axure so that we could validate design concepts before even writing a single line of code, saving time and money and gaining confidence we were building the right thing. We asked users questions like “what deliveries do you have coming in today?” to see if they could easily find the information on the dashboard or navigation.
-
-For further feedback, we visited the offices of customers to showcase the designs. We wanted to gauge how excited they were that the product worked better and looked more modern. Customers were largely happy and excited about the new release. Many customers also provided useful feedback that went into the next round of iterations.
+For further feedback, we visited the offices of customers to showcase the designs. We wanted to gauge how excited they were that the product worked better and looked more modern. Thankfully, customers were largely happy and excited about the new release. Many also provided useful feedback that went into the next round of iterations.
 
 ### Introducing Analytics
 
