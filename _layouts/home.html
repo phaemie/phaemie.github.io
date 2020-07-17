@@ -13,7 +13,8 @@ layout: base
       {% if coll.label == 'case_studies' %}
         {% if coll.output %}
           <ul class="post-list">
-            {% for study in site.case_studies %}
+            {% assign sortedCaseStudies = site.case_studies | sort: 'date' | reverse %}
+            {% for study in sortedCaseStudies %}
               <li>
                 <a class="post-list-item" href="{{ study.url | relative_url }}">
                     {% capture image_alt %}{% if study.image_alt %}{{ study.image_alt }}{% else %}{{ study.title | append: " screenshot" }}{% endif %}{% endcapture %}
