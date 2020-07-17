@@ -19,7 +19,8 @@ layout: base
         {% comment %} get prev and next indexes {% endcomment %}
         {% assign prev_i = -1 %}
         {% assign next_i = -1 %}
-        {% for study in site.case_studies %}
+        {% assign sortedCaseStudies = site.case_studies | sort: 'date' | reverse %}
+        {% for study in sortedCaseStudies %}
           {% if study.title == page.title %}
             {% unless forloop.first %}
               {% assign prev_i = forloop.index0 | minus: 1 %}
@@ -31,11 +32,11 @@ layout: base
         {% endfor %}
 
         {% if prev_i != -1 %}
-          {% assign prev = site.case_studies[prev_i] %}
+          {% assign prev = sortedCaseStudies[prev_i] %}
           <a class="prev-post" href="{{prev.url | relative_url }}"><span>{{ prev.title | escape }}</span></a>
         {% endif %}
         {% if next_i != -1 %}
-          {% assign next = site.case_studies[next_i] %}
+          {% assign next = sortedCaseStudies[next_i] %}
           <a class="next-post" href="{{next.url | relative_url }}"><span>{{ next.title | escape }}</span></a>
         {% endif %}
       </div>
