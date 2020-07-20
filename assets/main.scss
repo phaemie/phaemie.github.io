@@ -351,8 +351,12 @@ ul {
         > li {
             box-sizing: border-box;
             width: 100%;
-            padding: 0 (2 * $gutter-width) (2 * $gutter-width) 0;
             color: $highlight-color;
+
+            @include minWidth($on-laptop) {
+                width: 50%;
+                padding: 0 (2 * $gutter-width) (2 * $gutter-width) 0;
+            }
 
             .js-enabled & {
                 transform: translateY(1000px);
@@ -369,10 +373,6 @@ ul {
             &:nth-child(6n + 4) { transition-duration: 1.0s; }
             &:nth-child(6n + 5) { transition-duration: 0.4s; }
 
-            @include minWidth($on-laptop) {
-                width: 50%;
-            }
-
             > a, > a:hover, > a:active, a:focus {
                 color: inherit;
                 text-decoration: inherit;
@@ -382,17 +382,13 @@ ul {
                 display: block;
                 position: relative;
                 box-sizing: border-box;
-                padding: 40%; // make the height x% of the width. Contents must be position: absolute;
-
+                padding-bottom: $spacing-unit + 20px;
 
                 .post-image {
-                    position: absolute;
-                    width: 80%;
-                    height: 80%;
+                    width: 100%;
                     object-fit: cover;
-                    bottom: 0;
-                    right: 0;
-                    transition: 0.2s bottom ease-in-out;
+                    transform: translateY(0);
+                    transition: 0.2s transform ease-in-out;
                 }
 
                 .post-title {
@@ -400,9 +396,6 @@ ul {
                 }
 
                 .post-meta {
-                    position: absolute;
-                    top: $spacing-unit;
-                    left: $spacing-unit;
                 }
 
                 &:hover {
@@ -411,7 +404,7 @@ ul {
                         color: $link-hover-color;
                     }
                     .post-image {
-                        bottom: 10px;
+                        transform: translateY(-10px);
                     }
                 }
                 //background: transparent linear-gradient(to bottom, rgba(255,255,255,0) 0, $bg-color ($base-font-size * 2));

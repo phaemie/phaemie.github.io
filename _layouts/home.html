@@ -13,14 +13,15 @@ layout: base
       {% if coll.label == 'case_studies' %}
         {% if coll.output %}
           <ul class="post-list">
-            {% for study in site.case_studies %}
+            {% assign sortedCaseStudies = site.case_studies | sort: 'date' | reverse %}
+            {% for study in sortedCaseStudies %}
               <li>
                 <a class="post-list-item" href="{{ study.url | relative_url }}">
-                    {% capture image_alt %}{% if study.image_alt %}{{ study.image_alt }}{% else %}{{ study.title | append: " screenshot" }}{% endif %}{% endcapture %}
-                    <img class="post-image" src="{{ study.image | prepend: "assets/" | relative_url }}" alt="{{ image_alt | escape }}" />
-                    <div class="post-meta">
-                      <h2 class="post-title">{{ study.title | escape }}</h2>
-                    </div>
+                  <div class="post-meta">
+                    <h2 class="post-title">{{ study.title | escape }}</h2>
+                  </div>
+                  {% capture image_alt %}{% if study.image_alt %}{{ study.image_alt }}{% else %}{{ study.title | append: " screenshot" }}{% endif %}{% endcapture %}
+                  <img class="post-image" src="{{ study.image | prepend: "assets/" | relative_url }}" alt="{{ image_alt | escape }}" />
                 </a>
               </li>
             {% endfor %}
