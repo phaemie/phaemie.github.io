@@ -4,7 +4,7 @@ subtitle: |
   An app to help beginner sourdough bakers keep track of their loaves
 date:   2020-07-14 10:11:39 +1100
 project_type: "mobile app"
-image: "WellBreadmobileapp.png"
+image: "Wellbreadmobileapp.png"
 image_alt: "WellBread mobile app screens"
 excerpt: ""
 ---
