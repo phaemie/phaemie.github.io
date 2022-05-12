@@ -1,7 +1,7 @@
 ---
-title:  "WellBread app"
+title:  "WellBread mobile app concept"
 subtitle: |
-  An app to help beginner sourdough bakers keep track of their loaves
+  An app concept to help beginner sourdough bakers keep track of their loaves
 date:   2020-07-14 10:11:39 +1100
 project_type: "mobile app"
 image: "Wellbreadapp.png"
@@ -12,7 +12,7 @@ excerpt: ""
 
 ## The Problem
 
-Home isolation due to Covid-19 in 2020 is undoubtedly a challenging time for many. However, this time at home provided many with the opportunity to pursue hobbies like breadmaking. 
+Home isolation due to Covid-19 in 2020 was undoubtedly a challenging time for many. However, this time at home provided many with the opportunity to pursue hobbies like breadmaking. 
 
 The internet is a treasure trove for free recipes, videos and tutorials of sourdough. But each recipe is long and time-consuming, easily spanning a few days days. It is easy to get lost in the process and lose track of where you're at. This is compounded when you have to mentally keep track of multiple loaves in different parts of the process, remember to feed your sourdough starter and find things to do with your starter discard after a feed...
 
