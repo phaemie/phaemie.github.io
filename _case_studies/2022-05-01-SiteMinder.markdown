@@ -4,7 +4,7 @@ subtitle: |
   A summary of what I've been up to in the SiteMinder design team
 date:   2022-05-01 10:11:39 +1100
 project_type: "SaaS design"
-image: "Siteminder.png"
+image: "SiteMinder.png"
 image_alt: "Design at SiteMinder"
 excerpt: ""
 ---
